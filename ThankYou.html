@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            width: 100%;
+        }
+
+        body {
+            background-color: #8EC5FC;
+            background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+            display: table;
+            font-size: larger;
+            font-family: 'Times New Roman', Times, serif;
+            font: bold;
+        }
+
+        .thankyou {
+            text-align: center;
+            display: table-cell;
+            vertical-align: middle;
+        }
+    </style>
+</head>
+<body>
+<div class="thankyou">
+    <p id = "ty" align="center">Thank you</p>
+    <p id = "email" align = "center" >Email</p>
+</div>
+<script>
+const urlstr = window.location.search;
+const params = new URLSearchParams(urlstr);
+const firstname = params.get('name');
+const email = params.get('email');
+document.getElementById("ty").innerHTML = "Dear "+firstname+" Thank You for Your Donation";
+document.getElementById("email").innerHTML = "Dear "+firstname+" your recipt has been emailed to " +email;
+</script>
+</body>
+</html>

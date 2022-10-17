@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Activities</title>
+<link rel="icon" type="image/x-icon" href="Images/favicon.jpg">
+<!-- External CSS Style sheet-->
+<link rel="stylesheet" text="css" href="CSS/Team_Sahaya.css">
+<!-- example of external to embedded CSS overriding -->
+<style> 
+/* Accessing CSS selector by class */
+.img-container {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+  color: green;
+}
+/* Accessing CSS selector by Id */
+#activities{
+ border-style:solid; 
+ padding:50px; 
+ margin:30px;
+}
+span{
+display: block;
+}
+.BtoI{
+display: inline;
+}
+</style>
+</head>
+<body>
+
+<h2 style="text-align:center;background-color:rgb(240,240,240)">OUR MISSION</h2> <!-- Inline CSS -->
+<div id = "activities">
+<!-- Colour in RGB Format -->
+<p style="text-align:center;background-color:rgb(240,240,240)"> To provide care and assistance in both practical and emotional terms to everyone in the community</p>
+
+<div class="clearfix">
+  <div class="img-container" style="color:pink"> <!-- Inline CSS overriding External,Embedded CSS -->
+  <img src="Images/Activities/climate.jpg" alt="Climate" style="width:100%">
+  <p style="text-align:center">The Climate Crisis</p>
+  <span style="text-align:center; color:black">The climate crisis enhances inequality, poverty, and displacement, as well as raising the risk of conflict.</span>
+  <span style="text-align:center; color:black"> <strong>We raised funds up to $15000 to help the needy.</strong></span>
+  </div>
+  <div class="img-container" style="color:pink">
+  <img src="Images/Activities/covid.jpg" alt="Covid" style="width:100%">
+     <p style="text-align:center">COVID-19 Pandemic</p>
+   <p style="text-align:center; color:black">COVID-19 has robbed millions of children not only of their education, safety, and health but also of their childhood. Save the Children has been on the front lines of the pandemic since the beginning, thanks to the gratitude of our supporters.</p>
+    <br><br>  </div>
+  <div class="img-container" style="color:pink">
+  <img src="Images/Activities/education.jpg" alt="Education" style="width:100%">
+     <p style="text-align:center">Education</p>
+   <div class="BtoI" style="text-align:center; color:black" >We acknowledge the importance of education for girls. </div>
+   
+   <div class="BtoI" style="text-align:center; color:black">We will work together to improve girls' education. We will reach every girl in order to assist her to grow up healthy, educated, and safe.</div>
+  </div><br>
+  
+</div>
+<div style="text-align:center">
+  <button class="button button2" onclick="window.open ('form.html', '_blank')">Donate Now</button>
+ 
+
+</div>
+  
+  </div>
+</body>
+</html>
